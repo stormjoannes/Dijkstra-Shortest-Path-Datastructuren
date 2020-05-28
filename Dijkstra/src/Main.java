@@ -31,11 +31,12 @@ public class Main {
         graph.addNode(nodeE);
         graph.addNode(nodeF);
 
-        graph = graph.calculateShortestPathFromSource(graph, nodeA);
+        graph.calculateShortestPathFromSource(graph, nodeA);
         ArrayList<String> done = new ArrayList<>();
         for (Node i : nodeE.getShortestPath()) {
             done.add(i.getName());
         }
+        done.add("E");
         System.out.println(done);
     }
 }

@@ -10,7 +10,7 @@ public class Node {
 
     Map<Node, Integer> adjacentNodes = new HashMap<>();
 
-    public void addDestination(Shortest_path.Node destination, int distance) {
+    public void addDestination(Node destination, int distance) {
         adjacentNodes.put(destination, distance);
     }
 

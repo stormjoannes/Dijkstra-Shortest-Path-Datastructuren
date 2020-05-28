@@ -10,7 +10,7 @@ public class Graph {
         this.node = nd;
     }
 
-    public static Shortest_path.Graph calculateShortestPathFromSource(Shortest_path.Graph graph, Node source) {
+    public static Graph calculateShortestPathFromSource(Graph graph, Node source) {
         source.setDistance(0);
 
         Set<Node> settledNodes = new HashSet<>();
