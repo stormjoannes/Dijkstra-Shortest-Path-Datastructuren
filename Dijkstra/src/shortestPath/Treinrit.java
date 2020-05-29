@@ -15,6 +15,10 @@ public class Treinrit extends Stap {
         return Min;
     }
 
+    public void setMin(int min) {
+        Min = min;
+    }
+
     public String toString() {
         return "Tijd in Minuten: " + Min;
     }

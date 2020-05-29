@@ -7,8 +7,8 @@ public class Vlucht extends Stap {
     public int euro;
 
     public Vlucht(Node cls, int akm) {
-        this.euro = akm;
         this.eind = cls;
+        this.euro = akm;
     }
 
     public int getKM() {
