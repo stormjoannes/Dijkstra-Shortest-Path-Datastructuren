@@ -57,7 +57,6 @@ public class Graph {
                 shortestPath.add(evaluationNode);
             }
 
-
             evaluationNode.setShortestPath(shortestPath);
         }
     }

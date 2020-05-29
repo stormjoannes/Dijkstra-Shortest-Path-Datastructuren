@@ -47,7 +47,10 @@ public class Main {
         graph.addNode(nodeE);
         graph.addNode(nodeF);
 
-        Reis reis1 = new Reis();
-        System.out.println(reis1.bestRoute(nodeE, graph.calculateShortestPathFromSource(graph, nodeA), nodeA));
+        Reis reis1 = new Reis("Rit");
+        Node beginNode = nodeA;
+        Node eindNode = nodeE;
+
+        System.out.println(reis1.bestRoute(eindNode, graph.calculateShortestPathFromSource(graph, beginNode), beginNode));
     }
 }
