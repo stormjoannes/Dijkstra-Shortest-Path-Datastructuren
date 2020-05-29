@@ -1,7 +1,4 @@
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Graph {
     public Node node;
@@ -32,6 +29,7 @@ public class Graph {
             }
             settledNodes.add(currentNode);
         }
+//        currentNode
         return graph;
     }
 
@@ -54,8 +52,15 @@ public class Graph {
             evaluationNode.setDistance(sourceDistance + edgeWeigh);
             LinkedList<Node> shortestPath = new LinkedList<>(sourceNode.getShortestPath());
             shortestPath.add(sourceNode);
-
+//            System.out.println(evaluationNode.getName());
             evaluationNode.setShortestPath(shortestPath);
+//            System.out.println(evaluationNode.getName());
+//            System.out.println("");
+
+//            if (!shortestPath.contains(evaluationNode)) {
+//                shortestPath.add(evaluationNode);
+//            }
         }
+//        shortestPath.add(evaluationNode);
     }
 }
