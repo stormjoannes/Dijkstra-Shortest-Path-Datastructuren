@@ -11,6 +11,7 @@ public class Main {
         Node ritF = new Node("F");
 
         //10 is dit geval het aantal kilometers.
+        //ook zet ik hier mijn connecties. In dit geval kun je dus van A naar B en C.
         Stap ritAB = new Rit(ritB, 10);
         Stap ritAC = new Rit(ritC, 15);
 
@@ -24,6 +25,7 @@ public class Main {
 
         Stap ritFE = new Rit(ritE, 5);
 
+        //hier zet ik ik Node de waardes van de connecties met de afstanden daarvan
         ritA.addDestination(ritAB);
         ritA.addDestination(ritAC);
 
@@ -37,6 +39,7 @@ public class Main {
 
         ritF.addDestination(ritFE);
 
+        //hier maak ik een lege graph aan met alle tot nu toe bestaande nodes, dus ook met alle verbindingen.
         Graph graphRit = new Graph();
 
         graphRit.addNode(ritA);
@@ -50,10 +53,9 @@ public class Main {
         Node beginNodeRit = ritA;
         Node eindNodeRit = ritE;
 
+        //hierboven kun je het beginpunt kiezen en het eindpunten. Hier onder zal dan de kortste route voor je uitgerekend worden en uitgeprint.
         System.out.println(reisRit1.bestRoute(eindNodeRit, graphRit.calculateShortestPathFromSource(graphRit, beginNodeRit), beginNodeRit));
         System.out.println("");
-
-
 
 
         Node treinRitA = new Node("Breda");
@@ -64,7 +66,6 @@ public class Main {
         Node treinRitF = new Node("Kielegat");
 
         //mn is het aantal minuten. 20 is in dit geval dus het aantal minuten van a naar b.
-
         Stap treinRitAB = new Treinrit(treinRitB, 20);
         Stap treinRitAC = new Treinrit(treinRitC, 10);
 
