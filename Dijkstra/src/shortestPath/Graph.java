@@ -1,3 +1,5 @@
+package shortestPath;
+
 import java.util.*;
 
 public class Graph {
@@ -18,7 +20,7 @@ public class Graph {
         while (unsettledNodes.size() != 0) {
             Node currentNode = getLowestDistanceNode(unsettledNodes);
             unsettledNodes.remove(currentNode);
-            for (Map.Entry< Node, Integer> adjacencyPair:
+            for (Map.Entry<Node, Integer> adjacencyPair:
                     currentNode.getAdjacentNodes().entrySet()) {
                 Node adjacentNode = adjacencyPair.getKey();
                 Integer edgeWeight = adjacencyPair.getValue();
@@ -32,7 +34,7 @@ public class Graph {
         return graph;
     }
 
-    private static Node getLowestDistanceNode(Set < Node > unsettledNodes) {
+    private static Node getLowestDistanceNode(Set <Node> unsettledNodes) {
         Node lowestDistanceNode = null;
         int lowestDistance = Integer.MAX_VALUE;
         for (Node node: unsettledNodes) {

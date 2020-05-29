@@ -1,5 +1,6 @@
+package shortestPath;
 
-import java.util.HashMap;
+import shortestPath.Node;
 
 public class Rit extends Stap {
     public int KM;

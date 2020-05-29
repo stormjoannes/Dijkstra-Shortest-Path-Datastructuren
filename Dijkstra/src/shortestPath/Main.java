@@ -1,6 +1,6 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+package shortestPath;
+
+import shortestPath.Graph;
 
 public class Main {
     public static void main(String[] arg) {
@@ -47,7 +47,7 @@ public class Main {
         graphRit.addNode(ritE);
         graphRit.addNode(ritF);
 
-        Reis reisRit1 = new Reis("Rit");
+        Reis reisRit1 = new Reis("shortestPath.Rit");
         Node beginNodeRit = ritA;
         Node eindNodeRit = ritE;
 
@@ -99,7 +99,7 @@ public class Main {
         graphTreinrit.addNode(treinRitE);
         graphTreinrit.addNode(treinRitF);
 
-        Reis reistTeinrit1 = new Reis("Treinrit");
+        Reis reistTeinrit1 = new Reis("shortestPath.Treinrit");
         Node beginNodeTreinrit = treinRitA;
         Node eindNodeTreinrit = treinRitE;
 
@@ -150,7 +150,7 @@ public class Main {
         graphVlucht.addNode(vluchtE);
         graphVlucht.addNode(vluchtF);
 
-        Reis reisVlucht1 = new Reis("Vlucht");
+        Reis reisVlucht1 = new Reis("shortestPath.Vlucht");
         Node beginNodeVlucht = vluchtA;
         Node eindNodeVlucht = vluchtE;
 

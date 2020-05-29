@@ -1,4 +1,9 @@
-public class Treinrit extends Stap{
+package shortestPath;
+
+import shortestPath.Node;
+import shortestPath.Stap;
+
+public class Treinrit extends Stap {
     public int Min;
 
     public Treinrit(Node cls, int akm) {

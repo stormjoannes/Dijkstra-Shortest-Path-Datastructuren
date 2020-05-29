@@ -1,3 +1,8 @@
+package shortestPath;
+
+import shortestPath.Graph;
+import shortestPath.Node;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -6,11 +11,11 @@ public class Reis extends Graph {
 
     public Reis(String soortReis) {
         this.soortReis = soortReis;
-        if (soortReis == "Rit") {
+        if (soortReis == "shortestPath.Rit") {
             System.out.println("De korte " + soortReis + " is:");
-        } else if (soortReis == "Treinrit") {
+        } else if (soortReis == "shortestPath.Treinrit") {
             System.out.println("De snelste " + soortReis + " is:");
-        } else if (soortReis == "Vlucht") {
+        } else if (soortReis == "shortestPath.Vlucht") {
             System.out.println("De goedkoopste en meest veilig voor je bagage route " + soortReis + " is:");
         }
     }
