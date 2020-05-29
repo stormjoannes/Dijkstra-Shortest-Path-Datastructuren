@@ -1,8 +1,5 @@
 package shortestPath;
 
-import shortestPath.Node;
-import shortestPath.Stap;
-
 public class Vlucht extends Stap {
     public int euro;
 

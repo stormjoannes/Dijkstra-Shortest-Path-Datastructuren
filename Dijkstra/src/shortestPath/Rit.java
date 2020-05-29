@@ -1,7 +1,5 @@
 package shortestPath;
 
-import shortestPath.Node;
-
 public class Rit extends Stap {
     public int KM;
 
