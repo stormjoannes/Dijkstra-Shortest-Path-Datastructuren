@@ -29,7 +29,6 @@ public class Graph {
             }
             settledNodes.add(currentNode);
         }
-//        currentNode
         return graph;
     }
 
@@ -56,6 +55,7 @@ public class Graph {
             if (!shortestPath.contains(evaluationNode)) {
                 shortestPath.add(evaluationNode);
             }
+            System.out.println(evaluationNode.getName());
 
             evaluationNode.setShortestPath(shortestPath);
         }
