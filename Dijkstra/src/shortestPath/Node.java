@@ -14,7 +14,7 @@ public class Node {
 
     public void addDestination(Stap stap) {
 
-        adjacentNodes.put(stap.eind, stap.getKM());
+        adjacentNodes.put(stap.eind, stap.getValue());
 
     }
 

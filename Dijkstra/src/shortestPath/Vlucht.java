@@ -11,7 +11,7 @@ public class Vlucht extends Stap {
         this.euro = akm;
     }
 
-    public int getKM() {
+    public int getValue() {
         return euro;
     }
 

@@ -11,7 +11,7 @@ public class Treinrit extends Stap {
         this.eind = cls;
     }
 
-    public int getKM() {
+    public int getValue() {
         return Min;
     }
 

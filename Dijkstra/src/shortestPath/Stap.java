@@ -4,9 +4,9 @@ import shortestPath.Node;
 
 public class Stap {
     public Node eind;
-    public int KM;
+    public int value;
 
-    public int getKM() {
-        return KM;
+    public int getValue() {
+        return value;
     }
 }

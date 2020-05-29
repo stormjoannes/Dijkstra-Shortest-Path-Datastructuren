@@ -10,8 +10,12 @@ public class Rit extends Stap {
         this.eind = cls;
     }
 
-    public int getKM() {
+    public int getValue() {
         return KM;
+    }
+
+    public void setKM(int KM) {
+        this.KM = KM;
     }
 
     public String toString() {
