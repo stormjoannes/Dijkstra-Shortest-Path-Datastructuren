@@ -11,11 +11,11 @@ public class Reis extends Graph {
 
     public Reis(String soortReis) {
         this.soortReis = soortReis;
-        if (soortReis == "shortestPath.Rit") {
-            System.out.println("De korte " + soortReis + " is:");
-        } else if (soortReis == "shortestPath.Treinrit") {
+        if (soortReis == "Rit") {
+            System.out.println("De kortste " + soortReis + " is:");
+        } else if (soortReis == "Treinrit") {
             System.out.println("De snelste " + soortReis + " is:");
-        } else if (soortReis == "shortestPath.Vlucht") {
+        } else if (soortReis == "Vlucht") {
             System.out.println("De goedkoopste en meest veilig voor je bagage route " + soortReis + " is:");
         }
     }
