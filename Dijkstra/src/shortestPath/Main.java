@@ -10,6 +10,7 @@ public class Main {
         Node ritE = new Node("E");
         Node ritF = new Node("F");
 
+        //10 is dit geval het aantal kilometers.
         Stap ritAB = new Rit(ritB, 10);
         Stap ritAC = new Rit(ritC, 15);
 
@@ -61,6 +62,8 @@ public class Main {
         Node treinRitD = new Node("Bergen-op-zoom");
         Node treinRitE = new Node("Tilburg");
         Node treinRitF = new Node("Kielegat");
+
+        //mn is het aantal minuten. 20 is in dit geval dus het aantal minuten van a naar b.
 
         Stap treinRitAB = new Treinrit(treinRitB, 20);
         Stap treinRitAC = new Treinrit(treinRitC, 10);

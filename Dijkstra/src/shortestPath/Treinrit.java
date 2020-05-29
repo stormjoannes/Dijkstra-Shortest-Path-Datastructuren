@@ -6,8 +6,8 @@ import shortestPath.Stap;
 public class Treinrit extends Stap {
     public int Min;
 
-    public Treinrit(Node cls, int akm) {
-        this.Min = akm;
+    public Treinrit(Node cls, int mn) {
+        this.Min = mn;
         this.eind = cls;
     }
 

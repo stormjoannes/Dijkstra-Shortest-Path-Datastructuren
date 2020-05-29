@@ -6,9 +6,9 @@ import shortestPath.Stap;
 public class Vlucht extends Stap {
     public int euro;
 
-    public Vlucht(Node cls, int akm) {
+    public Vlucht(Node cls, int eu) {
         this.eind = cls;
-        this.euro = akm;
+        this.euro = eu;
     }
 
     public int getValue() {
