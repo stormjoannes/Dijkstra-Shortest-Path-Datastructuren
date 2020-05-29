@@ -10,13 +10,6 @@ public class Treinrit extends Stap{
         return Min;
     }
 
-    //    public Integer getKM()
-//
-//    public HashMap<Stap, Integer> doorsturen() {
-//        node_distance.put(eind, KM);
-//        return node_distance;
-//    }
-
     public String toString() {
         return "Tijd in Minuten: " + Min;
     }

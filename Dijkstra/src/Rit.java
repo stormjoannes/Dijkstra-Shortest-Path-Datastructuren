@@ -13,13 +13,6 @@ public class Rit extends Stap {
         return KM;
     }
 
-    //    public Integer getKM()
-//
-//    public HashMap<Stap, Integer> doorsturen() {
-//        node_distance.put(eind, KM);
-//        return node_distance;
-//    }
-
     public String toString() {
         return "afstand km: " + KM;
     }

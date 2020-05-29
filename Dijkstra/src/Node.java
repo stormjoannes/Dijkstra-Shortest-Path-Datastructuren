@@ -11,11 +11,9 @@ public class Node {
     Map<Node, Integer> adjacentNodes = new HashMap<>();
 
     public void addDestination(Stap stap) {
-//        System.out.print(name);
+
         adjacentNodes.put(stap.eind, stap.getKM());
-//        System.out.println(stap.eind);
-//        System.out.println(stap.KM);
-//        System.out.println("");
+
     }
 
     public Node(String name) {

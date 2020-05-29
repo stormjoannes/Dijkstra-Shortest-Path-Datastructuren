@@ -6,7 +6,13 @@ public class Reis extends Graph {
 
     public Reis(String soortReis) {
         this.soortReis = soortReis;
-        System.out.println("De snelste " + soortReis + " is:");
+        if (soortReis == "Rit") {
+            System.out.println("De korte " + soortReis + " is:");
+        } else if (soortReis == "Treinrit") {
+            System.out.println("De snelste " + soortReis + " is:");
+        } else if (soortReis == "Vlucht") {
+            System.out.println("De goedkoopste en meest veilig voor je bagage route " + soortReis + " is:");
+        }
     }
 
     public Set<String> bestRoute(Node eindNode, Graph graph, Node beginNode) {
