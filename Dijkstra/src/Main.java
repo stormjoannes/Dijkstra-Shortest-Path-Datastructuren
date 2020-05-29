@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] arg) {
-//        Reis rit = new Reis();
 
         Node nodeA = new Node("A");
         Node nodeB = new Node("B");
@@ -37,19 +38,6 @@ public class Main {
 
         nodeF.addDestination(nodeFE);
 
-//        nodeA.addDestination(nodeB, 10);
-//        nodeA.addDestination(nodeC, 15);
-//
-//        nodeB.addDestination(nodeD, 12);
-//        nodeB.addDestination(nodeF, 15);
-//
-//        nodeC.addDestination(nodeE, 10);
-//
-//        nodeD.addDestination(nodeE, 2);
-//        nodeD.addDestination(nodeF, 1);
-//
-//        nodeF.addDestination(nodeE, 5);
-//
         Graph graph = new Graph();
 
         graph.addNode(nodeA);
@@ -59,12 +47,7 @@ public class Main {
         graph.addNode(nodeE);
         graph.addNode(nodeF);
 
-
-        graph = graph.calculateShortestPathFromSource(graph, nodeA);
-        ArrayList<String> done = new ArrayList<>();
-        for (Node i : nodeE.getShortestPath()) {
-            done.add(i.getName());
-        }
-        System.out.println(done);
+        Reis reis1 = new Reis();
+        System.out.println(reis1.bestRoute(nodeE, graph.calculateShortestPathFromSource(graph, nodeA), nodeA));
     }
 }

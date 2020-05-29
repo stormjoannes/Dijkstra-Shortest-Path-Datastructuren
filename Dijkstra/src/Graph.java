@@ -52,15 +52,13 @@ public class Graph {
             evaluationNode.setDistance(sourceDistance + edgeWeigh);
             LinkedList<Node> shortestPath = new LinkedList<>(sourceNode.getShortestPath());
             shortestPath.add(sourceNode);
-//            System.out.println(evaluationNode.getName());
-            evaluationNode.setShortestPath(shortestPath);
-//            System.out.println(evaluationNode.getName());
-//            System.out.println("");
 
-//            if (!shortestPath.contains(evaluationNode)) {
-//                shortestPath.add(evaluationNode);
-//            }
+            if (!shortestPath.contains(evaluationNode)) {
+                shortestPath.add(evaluationNode);
+            }
+
+
+            evaluationNode.setShortestPath(shortestPath);
         }
-//        shortestPath.add(evaluationNode);
     }
 }
