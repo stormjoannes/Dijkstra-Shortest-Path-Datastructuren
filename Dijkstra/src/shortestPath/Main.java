@@ -113,6 +113,8 @@ public class Main {
         Node vluchtE = new Node("Carcassonne");
         Node vluchtF = new Node("Stockholm-Arlanda");
 
+        //bij vlucht ab is 200 de prijs van de vlucht en de 5 is vijf procent kans dat je bagage kwijt raakt. Aangezien ik de prrijs van de vlucht belangrijker vind dan de bagage heb ik de kans dat je bagage kwijtraakt gedeeld door 2 gedaan. Zo word de prijs een belangrijkere factor.
+
         Stap vluchtAB = new Vlucht(vluchtB, 200 * (5 / 2));
         Stap vluchtAC = new Vlucht(vluchtC, 185 * (8 / 2));
 
