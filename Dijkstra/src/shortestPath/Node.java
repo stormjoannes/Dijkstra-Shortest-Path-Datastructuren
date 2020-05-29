@@ -13,7 +13,6 @@ public class Node {
     Map<Node, Integer> adjacentNodes = new HashMap<>();
 
     public void addDestination(Stap stap) {
-
         adjacentNodes.put(stap.eind, stap.getValue());
 
     }
@@ -42,7 +41,7 @@ public class Node {
         return shortestPath;
     }
 
-    public void setShortestPath(List<Node> shortestPath) {
-        this.shortestPath = shortestPath;
+    public void setShortestPath(List<Node> shortPath) {
+        this.shortestPath = shortPath;
     }
 }
